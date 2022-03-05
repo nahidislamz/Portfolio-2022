@@ -59,22 +59,28 @@ header{
 
     .me{
         left: calc(50% - 7.5rem);
+        height: 21rem;
     }
  
 }
 
 @media screen  and (max-width:600px){  
+    .me{
+        left: calc(50% - 7.5rem);
+        height: 21rem;
+    }
     .scroll__down{
         display: none;
     }
     .header__social{
-        color: chartreuse;
+        
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap:0.8rem;
-        left: calc(50% - 2rem);
-        top:2rem
+        font-size: 1.8rem;
+        gap:1.5rem;
+        left: calc(50% - 4rem);
+        bottom: 3rem;
     }
     .header__social::after{
         display: none;
