@@ -5,7 +5,7 @@
 }
 
 .portfolio__item{
-    background: rgba(16, 30, 110, 0.3);
+    background: var(--bg-secondary);
     backdrop-filter: blur(15px);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -23,19 +23,64 @@
     overflow: hidden;
 }
 .portfolio__item h3{
-    margin: 1.2rem 0 2rem;
+ margin-top: 1.2rem;
+}
+.portfolio__item p{
+   margin-bottom: 1rem;  
+   font-size: 0.9rem;
 }
 
 .portfolio__item-btn{
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+}
+.portfolio__item-icon{
+    font-size: 20px;
+    margin-top: 0.4rem;
 }
 
+.modal__info{
+    padding: 1.5rem;
+}
+.modal__info h2{
+    margin-top: 0.5rem 0 0 0.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.modal__info p{
+    text-align: justify;
+    font-size: 14px;
+    color: var(--color-light);
+}
+.features__list{
+    padding: 0 2.5rem;
+    color: var(--color-light);
+}
+.features__list ul{
+    margin: 2rem;
+}
+.features__list li{
+    list-style: circle;
+    margin-top: 0;
+    padding: 0;
+    list-style-position: outside;
+    font-size: 13px;
+}
 @media screen  and (max-width:1024px){
     .portfolio__container{
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
+    }
+    .modal__container{
+        margin: auto;
+    }
+    .modal__info p{
+        font-size: 16px;
+    }
+    .features__list{
+        font-size: 16px;
     }
 }
 @media screen  and (max-width:600px){
@@ -43,4 +88,12 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+    .modal__info p{
+        font-size: 14px;
+    }
+    .features__list{
+        font-size: 14px;
+    }
 }
+
+

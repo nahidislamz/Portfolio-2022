@@ -4,7 +4,7 @@ import Profile from '../../assets/me.png'
 import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs'
 import Navbar from './navbar/Navbar'
 
-function Header() {
+function Header({cv_link}) {
   return (
     <>
       <header id='home'>
@@ -13,13 +13,13 @@ function Header() {
           <h1>Nahid Islam</h1>
           <h5 className='text-light'>Fullstack Developer</h5>
           <div className="btn__container">
-            <a href="" className='btn'>Download CV</a>
+            <a href={cv_link} className='btn'>Download CV</a>
             <a href="#contact" className='btn btn-primary'>Contact Me</a>
           </div>
           <div className="header__social">
-            <a href="https://" target='_blank'> <BsLinkedin /> </a>
-            <a href="https://" target='_blank'><BsGithub /></a>
-            <a href="https://" target='_blank'> <BsFacebook /></a>
+            <a href="https://" target='_blank' rel='noopener noreferrer'> <BsLinkedin /> </a>
+            <a href="https://github.com/nahidislamz" target='_blank' rel='noopener noreferrer'><BsGithub /></a>
+            <a href="https://" target='_blank' rel='noopener noreferrer'> <BsFacebook /></a>
           </div>
           <div className="me">
             <img src={Profile} alt='Nahid Islam' />

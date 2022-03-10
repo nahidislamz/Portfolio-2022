@@ -35,13 +35,14 @@ header{
 }
 .me{
     background: var(--color-primary);
-    background-image: linear-gradient(var(--color-primary),var(--color-secondary));
+    background-image: linear-gradient(var(--color-primary),#831717,#000000);
     width: 15rem;
-    height: 35rem;
+    height: 15rem;
     position: absolute;
     left: calc(50% - 7.5rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 100%;
+    border: 2px solid var(--bg-primary);
     overflow: hidden;
     padding: 3rem 0.5rem 0.5rem 0.5rem;
 
@@ -59,7 +60,7 @@ header{
 
     .me{
         left: calc(50% - 7.5rem);
-        height: 21rem;
+        height: 15rem;
     }
  
 }
@@ -67,7 +68,7 @@ header{
 @media screen  and (max-width:600px){  
     .me{
         left: calc(50% - 7.5rem);
-        height: 21rem;
+        height: 15rem;
     }
     .scroll__down{
         display: none;

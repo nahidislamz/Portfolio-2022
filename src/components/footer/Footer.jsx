@@ -5,10 +5,10 @@ function Footer() {
   return (
     <footer>
       <div className="footer__socials">
-        <a href="https://facebook.com/nahidislamz"><AiFillFacebook/></a>
-        <a href="https://instagram.com/nahidislamz"><AiFillInstagram/></a>
-        <a href="https://github.com/nahidislamz"><AiFillGithub/></a>
-        <a href="https://linkedin.com/nahidislamz"><AiFillLinkedin/></a>
+        <a href="https://facebook.com/nahidislamz" target='_blank' rel='noopener noreferrer'><AiFillFacebook/></a>
+        <a href="https://instagram.com/nahidislamz" target='_blank' rel='noopener noreferrer'><AiFillInstagram/></a>
+        <a href="https://github.com/nahidislamz" target='_blank' rel='noopener noreferrer'><AiFillGithub/></a>
+        <a href="https://linkedin.com/in/nahidislamz" target='_blank' rel='noopener noreferrer'><AiFillLinkedin/></a>
       </div>
 
       <div className="footer__copyright">
