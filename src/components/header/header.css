@@ -35,7 +35,7 @@ header{
 }
 .me{
     background: var(--color-primary);
-    background-image: linear-gradient(var(--color-primary),#831717,#000000);
+    background-image: linear-gradient(var(--color-primary),#1e20b6,#000000);
     width: 15rem;
     height: 15rem;
     position: absolute;

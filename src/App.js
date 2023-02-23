@@ -1,12 +1,14 @@
 import React,{ useState, useEffect } from 'react'
-import { About, Contact, Header, Footer, Portfolio, Skills,Spinner } from './components'
+import { About, Contact, Header, Footer, Portfolio, Skills,Spinner,Analyst_Projects } from './components'
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import app from './firebase'
+
 const db = getFirestore(app);
 
 function App() {
   const [about, setAbout] = useState();
   const [project, setProject] = useState([])
+  const [a_project, set_a_Project] = useState([])
   const [cv_link, setCV] = useState()
   const [loading, setLoading] = useState(true)
   useEffect(() => {
@@ -54,9 +56,30 @@ function App() {
         setLoading(false);
       }
     }
+
+    const get_a_Projects = async () => {
+      const data = [];  
+      const querySnapshot = await getDocs(collection(db, "analyst_projects"));
+      querySnapshot.forEach((doc) => {
+        data.push(
+          {
+            title: doc.data().title,
+            image:doc.data().banner,
+            notebook:doc.data().notebook,
+            colab: doc.data().colab,
+          }
+        )
+      });
+      if (data) {
+        set_a_Project(data)
+        setLoading(false);
+      }
+    }
+
     getCvLink();
     getAbout();
     getProjects();
+    get_a_Projects();
   }, [about]);
 
 
@@ -71,6 +94,7 @@ function App() {
           <About about={about} />
           <Skills />
           <Portfolio data={project}/>
+          <Analyst_Projects data={a_project}/>
           <Contact />
           <Footer />
         </>

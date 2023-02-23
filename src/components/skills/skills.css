@@ -33,6 +33,12 @@
     row-gap: 2rem;
 }
 
+.skill__content_other{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
 .skill__details{
     display: flex;
     gap: 1rem;
@@ -44,9 +50,15 @@
     font-size: 20px;
     color: var(--color-light);
 }
+.ml{
+    padding-left: 2.5rem;
+    color: var(--color-light);
+}
 
-
-
+.skill__communication b{
+    font-size: 20px;
+    font-weight: bolder;
+}
 @media screen  and (max-width:1024px){
 
     .skill__container{

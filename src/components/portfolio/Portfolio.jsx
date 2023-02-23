@@ -12,7 +12,7 @@ function Portfolio({data}) {
   const onCloseModal = () => setOpen(false);
   return (
     <section id='portfolio'>
-      <h2>Portfolio</h2>
+      <h2>Web Development Projects</h2>
       <div className="container portfolio__container">
       {
         data.map((item)=>(

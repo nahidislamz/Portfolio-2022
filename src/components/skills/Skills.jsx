@@ -1,6 +1,6 @@
 import React from 'react'
 import './skills.css'
-import { DiNodejsSmall } from 'react-icons/di'
+import { DiNodejsSmall, DiSass } from 'react-icons/di'
 import {
   SiHtml5,
   SiCss3,
@@ -16,7 +16,14 @@ import {
   SiMaterialui,
   SiCplusplus,
   SiFirebase,
-  SiTailwindcss
+  SiTailwindcss,
+  SiMicrosoftsqlserver,
+  SiR,
+  SiTableau,
+  SiScikitlearn,
+  SiMlb,
+  SiMatrix,
+  SiMicrosoftexcel
 } from 'react-icons/si'
 
 function Skills() {
@@ -148,6 +155,91 @@ function Skills() {
 
           </div>
         </div>
+
+        <div className="skill__analyst">
+          <h3>Analyst Skills</h3>
+          <div className="skill__content">
+            <article className="skill__details">
+              <SiMlb className='skill__details-icon' />
+              <div>
+                <h4>ML</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              <SiMicrosoftexcel className='skill__details-icon' />
+              <div>
+                <h4>MS Excel</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              <SiR className='skill__details-icon' />
+              <div>
+                <h4>R</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              <SiTableau className='skill__details-icon' />
+              <div>
+                <h4>Tableau</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              
+              <DiSass className='skill__details-icon' />
+              <div>
+                <h4>SASS</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              <SiMicrosoftsqlserver className='skill__details-icon' />
+              <div>
+                <h4>MS SQL</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              <SiScikitlearn className='skill__details-icon' />
+              <div>
+                <h4>Scikit Learn</h4>
+              </div>
+            </article>
+
+            <article className="skill__details">
+              <SiMatrix className='skill__details-icon' />
+              <div>
+                <h4>Matplolib</h4>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        {/*Communication Skills Part*/}
+        <div className="skill__communication">
+          <h3>Other Skills</h3>
+          <h4><b>></b> Language</h4>
+          <article className='skill__details'>
+              <div>
+                <h4 className='ml'>Enlgish</h4>
+              </div>
+              <div>
+               <h4 className='ml'>Bangla</h4>
+              </div>
+              <div>
+                <h4 className='ml'>Hindi</h4>
+              </div>
+            </article>
+          <h4><b>></b> Team Work</h4>
+          <h4><b>></b> Organizaional Skill</h4>
+          <h4><b>></b> Communication Skill</h4>
+          <h4><b>></b> Problem Solving</h4>
+          <h4><b>></b> Time Management</h4>
+        </div>
+
       </div>
     </section>
   )

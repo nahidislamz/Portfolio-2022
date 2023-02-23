@@ -5,3 +5,4 @@ export {default as Header}from './header/Header'
 export { default as Portfolio } from './portfolio/Portfolio';
 export {default as Skills}from './skills/Skills'
 export {default as Spinner}from './spinner/Spinner'
+export {default as Analyst_Projects} from './analyst_projects/analyst_projects'

@@ -46,7 +46,7 @@ function Contact() {
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
-            <a href="https://wa.me/+8801772280981" rel='noopener noreferrer' target='_blank'>Send a message</a>
+            <a href="https://wa.me/+447783477876" rel='noopener noreferrer' target='_blank'>Send a message</a>
           </article>
         </div>
         <form action="" ref={form} onSubmit={sendEmail}>

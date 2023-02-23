@@ -45,7 +45,7 @@ input,textarea{
     background: transparent;
     border: 2px solid var(--color-secondary);
     resize: none;
-    color: var(--color-white);
+    color: var(--color-foreground);
 }
 
 @media screen  and (max-width:1024px){
